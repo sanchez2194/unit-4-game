@@ -1,0 +1,14 @@
+.backround-color {
+    background-color: black;
+    color: blue;
+    height: 100px;
+    
+    
+    
+};
+
+#score-box {
+    width: 100px;
+    height: 20px;
+    background-color:yellow;
+};
