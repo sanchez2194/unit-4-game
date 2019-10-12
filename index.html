@@ -1,66 +1,101 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Crystals Collector!</h1>
-        <p class="lead"> 
-            
-            You will be given a random number at the start of the game. <br><br>
-            There are four crystals below. By clicking on the crytals you will add a specific amount of points to your total score. <br><br>
-            You win the game by matching your score to the random number, you lose the game if your total number exceeds the random number. <br><br>
-            The value of each crystal is hidden to you until you click on it <br><br>
-            Each time when the game starts, the value of the crytals change.
-        
-        </p>
-        
-      </div>
-
-     <div class="container-fluid">
-            <div class="container px-lg-5">
-                    <div class="row mx-lg-n5">
-                      <div class="col py-3 px-lg-5 border bg-light">Random Number</div>
-                      <div class="col py-3 px-lg-5 border bg-light">Wins: <br><br> Losses:</div>
-                    </div>
-            </div>
-
-            <div class="container">
-                    <div class="row">
-                      <div class="col-6 col-sm-4, backround-color"> <img src="img src=" class="img-thumbnail" http://lorempixel.com/output/city-q-c-166-125-10.jpg"> </div><br><br>
-                      <div class="col-6 col-sm-4, backround-color"> <img src="img src=" class="img-thumbnail" http://lorempixel.com/output/city-q-c-166-125-10.jpg"></div><br><br>
-                  
-                      <!-- Force next columns to break to new line at md breakpoint and up -->
-                      <div class="w-100 d-none d-md-block"></div>
-                  
-                      <div class="col-6 col-sm-4, backround-color"> <img src="img src=" class="img-thumbnail" http://lorempixel.com/output/city-q-c-166-125-10.jpg"></div><br><br>
-                      <div class="col-6 col-sm-4, backround-color"> <img src="img src=" class="img-thumbnail" http://lorempixel.com/output/city-q-c-166-125-10.jpg"></div><br><br>
-                    </div>
-            </div> <br><br><br>
-
-            <div class="row" id="score-box">
-
-              your total score is 
-
-            </div>
-
-
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+  <title>Hello, world!</title>
+</head>
+<body>
+  <div class="jumbotron">
+      <h1 class="display-4">Crystals Collector!</h1>
+      <p class="lead"> 
+          
+          You will be given a random number at the start of the game. <br><br>
+          There are four crystals below. By clicking on the crytals you will add a specific amount of points to your total score. <br><br>
+          You win the game by matching your score to the random number, you lose the game if your total number exceeds the random number. <br><br>
+          The value of each crystal is hidden to you until you click on it <br><br>
+          Each time when the game starts, the value of the crytals change.
+      
+      </p>
+      
     </div>
 
-    
+   <div class="container-fluid">
+          <div class="container px-lg-5">
+                  <div class="row mx-lg-n5">
+                    
+                    
+                    <div class="col py-3 px-lg-5 border bg-light" id="random">
+                      
+                     <h1> Random Number</h1> <br><br>
+                     <h2 id="randomNumber">100</h2>
+                      
+                    </div>
+                    
+                    
+                    
+                    <div class="col py-3 px-lg-5 border bg-light">
+                      
+                      <h1 id="wins">Wins:</h1> <br><br> 
+                      <h1 id="losses">Losses:</h1>
+                    
+                    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+                  </div>
+          </div>
+
+          <div class="container">
+                  <div class="row">
+                    <div class="col-6 col-sm-4, backround-color">
+                      
+                      <button id="button-1" value="0"><img src="./assets/images/0_AmwIyi21fDd9Guwz.jpg" class="img-thumbnail" id="adjust-size-1"></button>
+                    
+                    </div><br><br>
+                    
+                    <div class="col-6 col-sm-4, backround-color">
+                      
+                      <button id="button-2" value="0"><img src="./assets/images/download-1.jpg" class="img-thumbnail" id="adjust-size-2"></button>
+                    
+                    </div><br><br>
+                
+                    <!-- Force next columns to break to new line at md breakpoint and up -->
+                    <div class="w-100 d-none d-md-block"></div>
+                
+                    <div class="col-6 col-sm-4, backround-color">
+                      
+                      <button id="button-3" value="0"><img src="./assets/images/download-2.jpg" class="img-thumbnail" id="adjust-size-3"></button>
+                    
+                    </div><br><br>
+                    
+                    
+                    <div class="col-6 col-sm-4, backround-color">
+                    
+                      <button id="button-4" value="0"><img src="./assets/images/download.jpg" class="img-thumbnail" id="adjust-size-4"></button></div><br><br>
+                    
+                    </div>
+          </div> <br><br><br>
+
+          <div class="container px-lg-5">
+              <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light"><h1>your total score is</h1> </div>
+                <div class="col py-3 px-lg-5 border bg-light" id="totalNumber"><h2>0</h2></div>
+              </div>
+          </div> <br><br>
+
+  </div>
+
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+<script src="./assets/game.js"></script>
 </html>
